@@ -1,0 +1,19 @@
+<div class="step-counter-container">
+    <h1>Contador de Pasos</h1>
+    
+    <div class="step-circle">
+      <div class="step-count">{{ stepData.steps }}</div>
+      <div class="step-label">Pasos</div>
+    </div>
+    
+    <div class="step-details">
+      <div class="acceleration-info">
+        <span>Aceleración:</span>
+        <strong>{{ stepData.acceleration }} m/s²</strong>
+      </div>
+      
+      <button (click)="resetSteps()" class="reset-button">
+        Reiniciar Contador
+      </button>
+    </div>
+  </div>
